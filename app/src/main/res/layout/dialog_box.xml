@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape">
+    <ImageView
+        android:id="@+id/imageDeleteNote"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/deletenote"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/deleteNoteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Note"
+        android:layout_toRightOf="@id/imageDeleteNote"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/deleteMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure_want_to_delete_this_note"
+        android:layout_below="@id/imageDeleteNote"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/deleteButDig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Note"
+        android:textSize="20dp"
+        android:layout_below="@id/deleteMsg"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#FF0000"/>
+    <TextView
+        android:id="@+id/deleteCancelButDig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textSize="20dp"
+        android:layout_below="@id/deleteMsg"
+        android:layout_toLeftOf="@id/deleteButDig"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#FFFF00"/>
+</RelativeLayout>

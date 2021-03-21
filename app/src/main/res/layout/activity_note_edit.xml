@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteEditActivity"
+    android:id="@+id/note_edit"
+    android:orientation="vertical"
+    android:background="#333333">
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dateFormat"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/note_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/note_subtitle"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/desc_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_note_here"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:id="@+id/add_img"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/deleteBut"
+            android:src="@drawable/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/missleneousBut"/>
+        <Button
+            android:id="@+id/missleneousBut"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:text="Missleneous"
+            android:textColor="@color/black"
+            android:backgroundTint="#333333"/>
+    </RelativeLayout>
+</LinearLayout>
